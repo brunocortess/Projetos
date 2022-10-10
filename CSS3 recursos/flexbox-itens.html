@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flexbox - Flexible Box Layout</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			#container {
+				background: #dcdcdc;
+				height: 600px;
+				/* Flexbox*/
+				display: flex;
+				
+
+			}
+
+			.caixa {
+				background: white;
+				border: 1px solid grey;
+				width: 100px;
+				height: 100px;
+				margin: 10px;
+			}
+
+			.item1 {
+				flex-grow: 1;
+			}
+
+			.item2 {
+				flex-grow: 2;
+			}
+
+			
+			
+
+		</style>
+
+	</head>
+	<body>
+
+		<h1>Flexbox</h1>
+		<div id="container">
+			<div class="caixa item1">01</div>
+			<div class="caixa item2">02</div>
+			<div class="caixa">03</div>
+			<div class="caixa">04</div>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,349 @@
+/*******************************
+Seletor universal 
+* {
+	border: 1px solid red;
+
+}*/
+
+/*******************************
+Seletor de texto 
+
+h1 {
+	color: green;
+}*/
+
+/*******************************
+Seletor de classe 
+
+.verde {
+	color: green;
+}
+
+p.verde {
+	color: green;
+}*/
+
+/*******************************
+Seletor de ID 
+
+#cabecalho {
+	border: 1px solid red;
+}*/
+
+/*******************************
+Seletor de filho 
+div>a {
+	color: red;
+	text-decoration: none;
+}
+
+/*******************************
+Seletor de descendente 
+div a {
+	color: green;
+} 
+/*******************************
+Seletor de irmão adjacente 
+h1+p {
+	color: red;
+}
+
+
+/*******************************
+Seletor de irmão geral 
+
+h~p {
+	color: red;
+}*/
+
+
+
+
+/*******************************
+HERANÇA E ESPECIFICIDADE 
+
+Seletores iguais, exceção important
+
+p {
+	color: blue !important;
+}
+
+p {
+	color: red;
+}
+
+Se um seletor for mais específico que outro a 
+regra mais específica será aplicada
+(terá precedência sobre regras mais gerais)
+
+
+*{
+	color: red;
+}
+
+h2 { 
+	color: blue;
+}
+
+h2.verde { 
+	color: green;
+}
+
+h2#amarelo { 
+	color: yellow;
+}
+
+**********************
+Barra de navegação vertical 
+
+ul {
+	border: 1px solid red;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	padding: 20px;
+	border: 1px solid red;
+	background: url(../imagens/seta.png) no-repeat left center;
+}
+
+/***********************
+Lista de navegação vertical 
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/*formatar links que estão dentro da ul
+
+ul a {
+	width: 200px;
+	height: 40px;
+	color: #000;
+	text-decoration: none;
+	text-indent: 40px;
+	line-height: 40px;
+	display: block;
+	background: #f7b600 url(../imagens/menu.png) no-repeat left bottom;
+}
+/*Faz com que a imagem se movimente para esquerda ao 
+passar o cursor sobre, criando efeito 
+a:hover {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #FFF;
+} 
+
+/* Marcando páginas 
+
+#home .home a, 
+#sobre .sobre a,
+#servicos .servicos a,
+#noticias .noticias a,
+#contato .contato a,
+{
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #FFF;
+} 
+
+/* BARRA DE NAVEGAÇÃO HORIZONTAL
+ul {
+
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 720px;
+	background: #159cb0 url("../imagens/fundo-horizontal.png") repeat-x;
+	float: left;
+
+}
+
+ul li {
+	float: left;
+}
+
+ul a {
+	display: block;
+	padding: 0 2em;
+	line-height: 2.2em;
+	text-decoration: none;
+	color: #FFF;
+	background: url("../imagens/divisor.png") repeat-y;
+}
+
+/* Removendo imagem de marcador da primeira borda esquerda 
+ul .primeiro a {
+	background: none;
+}
+
+ul a:hover {
+	color: #085662;
+	background: #44cade;
+}
+
+#home .home a,
+#sobre .sobre a,
+#servicos .servicos a,
+#noticias .noticias a,
+#contato .contato a {
+	color: #085662;
+	background: #44cade;
+} */
+
+/*BARRA DE NAVEGAÇÃO COM ABAS
+
+body {
+	font-family: "Trebuche MS", Helvetica, sans-serif;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 720px;
+
+}
+
+ul li {
+	float: left;
+	background: url(../imagens/aba-direita.png) no-repeat top right;
+}
+
+li a {
+
+	display: block;
+	padding: 0 2em;
+	line-height: 3em;
+	text-decoration: none;
+	background: url(../imagens/aba-esquerda.png) no-repeat top left;
+	color: #FFF;
+}
+
+ul a:hover {
+	
+	color: #894a1f;
+}
+
+/*Marcando página atual e definindo imagem de fundo
+ul #atual {
+	background: url(../imagens/aba-direita-atual.png) no-repeat;
+} 
+
+ul #atual a {
+	background: url("../imagens/aba-esquerda-atual.png") no-repeat;
+}
+
+/***********************
+Layouts */
+
+body {
+	font-family: "Trebuche MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+#container {
+	width: 960px; /*720px*/
+	margin: 0 auto;
+	background: #FFF url("../imagens/coluna.png") repeat-y;
+	min-width: 720px;
+	max-width: 1280px;
+   
+}
+
+
+#marca {
+	width: 100%; 
+	height: 200px;
+	background: #225992 url("../imagens/cabecalho2.jpg") no-repeat center;
+	line-height: 200px;
+	text-align: center;
+}
+
+/*
+#imagem {
+	border: 1px solid red;
+	width: 90%;
+	overflow: hidden;
+}
+*/
+
+#conteudo {
+	width: 75%; /*520px -> 75*/
+	float: right;
+}
+
+#navegacao {
+	width: 23%;/*180px -> 25*/
+	float: left; 
+	padding-top: 0px;
+	padding-bottom: 0px;
+	/*background: #d1d1d1;*/
+	
+}
+
+#conteudo-principal {
+	width: 63%;/*320px -> 64*/
+	float: left;
+}
+
+img.img-noticia {
+	width: 94%;
+	padding: 2%;
+	max-width: 600px;
+
+}
+
+#conteudo-secundario {
+	width: 34%;/*180px -> 36*/
+	float: right;
+	background: #d1d1d1;
+	
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p{
+	padding-left: 20px;
+	padding-right: 20px;
+}	
+
+#rodape {
+	background: #c4c4c4;
+	clear: both;
+	padding: 5px;
+	text-align: center;
+}
+
+#navegacao ul {
+	
+	padding: 0 2em;
+	list-style-type: none;
+}
+
+#navegacao ul li {
+	background: #9E9E9E;
+	width: 120px;
+
+}
+
+#navegacao li a {
+	
+	height: 30px;
+	padding: 0 2em;
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+	line-height: 28px;
+
+}
+
+ul a:hover {
+	background: #FFF;
+	color: red;
+}

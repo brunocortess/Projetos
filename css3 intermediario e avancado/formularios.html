@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Estilizando Formulários</title>
+		<meta charset="utf-8">
+
+		<!-- Estilo customizado -->
+		<link rel="stylesheet" type="text/css" href="css/estilo-formularios.css">
+
+	</head>
+
+	<body>
+
+		<h2>Estilizando Formulários</h2>
+		
+		
+
+		<form>
+			<!-- Fieldset agrupa dados semelhantes -->
+			<fieldset>
+				<!-- Legend define uma legenda p esses dados semelhantes -->
+				<legend>Detalhes de contato</legend>
+
+				<div>
+					<!-- Label define um rotulo p identificar campos de texto -->
+					<label for="nome">Nome:</label> <!-- for associa o label ao input-->
+					<input type="text" name="nome" id="nome">
+					
+				</div>
+
+					<div>
+					<!-- Label define um rotulo p identificar campos de texto -->
+					<label for="email">Email:</label> <!-- for associa o label ao input-->
+					<input type="text" name="email" id="email">
+					
+				<div>
+					<!-- Label define um rotulo p identificar campos de texto -->
+					<label for="url">URL:</label> <!-- for associa o label ao input-->
+					<input type="text" name="url" id="url">
+					
+				</div>
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Comentários</legend>
+				<div>
+					<label for="mensagem">Message</label>
+					<textarea name="mensagem" id="mensagem"></textarea>
+
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Lembrar de mim</legend>
+				<div>
+
+					<label>
+						<input class="radio" type="radio" name="lembrar" id="sim">Sim
+					</label>
+					
+				</div>
+
+				<div>
+
+					<label>
+						<input class="radio" type="radio" name="lembrar" id="nao">Não
+					</label>
+					
+				</div>
+			</fieldset>
+
+		</form>
+
+		
+
+	</body>
+</html>

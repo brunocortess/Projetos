@@ -1,0 +1,298 @@
+/* ESTRUTURA DO SITE
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	font-family: "Trebuche MS", Helvetica, sans-serif;
+	background: #fff url(../imagens/fundo.png) repeat-x; /*Define imagem de fundo do topo */
+
+}
+
+/* Container principal onde todo conteúdo irá ficar
+*/
+
+#container {
+	width: 750px; /* Define a largura de todo aréa do site*/
+	margin: 0 auto; /* Centraliza a área do container*/
+}
+
+#topo {
+
+	padding-top: 25px;
+	height: 150px;
+	text-align: center;
+	background: url(../imagens/detalhe-topo.png) no-repeat right top;
+}
+
+.logo {
+	width: 152px; /*Define largura igual a do logo */
+	height: 66px; /*Define altura igual a do logo */
+	background: url(../imagens/logo.png) no-repeat center;
+	text-indent: -3000px; /* Esconde o que está escrito no h1 */
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+
+/*Formato padrão para todas as Uls do site*/
+
+a:link a:visited {
+	color: #b10333;
+	padding: 2px;
+}
+
+a:hover {
+	color: #e50040;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+}
+
+
+#topo ul {
+	margin-top: 30px; /*Descolando a ul do logo */
+	background: #b10333;
+	float: left; /* Ul precisa flutuar pois flutamos a li */
+	
+}
+
+#topo ul li {
+	float: left; /* Fazendo li flutuar */
+}
+
+#topo ul a {
+	font-size: 0.9em; /* Defindo tamanho da fonte */
+	display: block;
+	padding: 0.5em 1.4em; /* 0.5em Sup e Inf / 1.5 Dir e Esq */
+	text-decoration: none;
+	color: #fff;
+	line-height: 2.1em;
+	background: url(../imagens/divisor.png) repeat-y left center;
+}
+
+/* Removendo divisor do começo */
+#topo ul .primeiro a {
+	background: none;
+}
+
+#topo ul a:hover {
+	color: #69001d;
+
+}
+
+
+/*MARCANDO PÁGINAS*/
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos {
+	color: #fff;
+	background: #de003e;/*Define a cor de fundo da página marcada*/
+	cursor: text; /*Cursor da página marcada fica piscando*/
+
+}
+
+
+/*Configura layout de três colunas*/
+
+#conteudo {
+	background: #f5f5f5;
+	margin-top: 60px; /*Margem para afastar do topos*/
+	float: left;
+
+}
+
+
+#lateral {
+	width: 180px;
+	float: left;
+	margin: 0 0 20px -750px; /*Margem esquerda c -750px para colar na esquerda*/
+
+}
+
+
+/*Define o tamanho do conteudo primario em layout de 3 colunas*/
+#primario {
+	width: 270px;
+	margin: 0 0 20px 195px; /* 195px na esq p/ abrir espaço para o conteudo lateral (180px + 15px de margem direita*/
+	float: left;
+
+}
+
+/*Define o tamanho do conteudo primario em layout de 2 colunas que será maior do que no de 3 colunas*/
+#duas-colunas #primario {
+	width: 555px;
+}
+
+/*Define o tamanho do conteudo primario em layout de apenas 1 coluna*/
+#uma-coluna #primario {
+	width: 750px;
+	margin: 0 0 20px 0; 
+
+}
+
+#secundario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 15px;
+}
+
+/*Formatando imagens*/
+
+img.imagem-principal {
+	width: 98%; /* 98$ do tamanho total da aréa onde a img foi inserida*/
+	border: 3px solid #dfdfdf;
+}
+
+/*Caixa*/
+
+.caixa {
+	margin: 10px 0; /* Espaço entre as caisas de 10sup e inf e 0 laterais */
+	padding: 5px; /* Espaçamento interno 5sup-0dir-5inf-0esq */
+	background: #f3f3f3 url(../imagens/fundo-caixa.png);
+
+}
+
+.caixa-conteudo {
+	background: #fff;	
+	padding: 5px;
+	margin-top: 5px; 
+}
+
+h2 {
+	font-size: 1em;
+	background: #294c71;
+	color: #fff;
+	padding: 5px;
+}
+
+
+
+/*BARRA DE NAVEGAÇÃO LATERAL*/
+
+#lateral ul a {
+	display: block;
+	padding: 3px;
+	font-size: 0.9em;
+	line-height: 30px; /* Aumenta espaçamento abaixo dos nomes*/
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #f3f3f3;
+
+}
+
+#lateral ul a:hover {
+	color: #a1a1a1;
+	padding-left: 20px;
+	background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+}
+
+/*NEWSLETTER*/
+
+label {
+	display: block;
+	cursor: pointer; /* Modifica cursor p/ maozinha ao passar sobre*/
+}
+
+input {
+	border: none;
+	padding: 5px;
+	width: 125px;
+	font-size: 0.9em;
+	background-color: #fff;
+}
+
+input.submit {
+	width: 80px;
+	background-color: #b10333;
+	border: 2px solid #870529;
+	color: #fff;
+}
+
+/*FORMATANDO CABEÇALHOS*/
+
+h3 {
+	text-transform: uppercase; /*Deixa letras maiúsculas*/
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+/*formata todos os h3 que estão dentro da classe destaque*/
+
+.destaque h3 {
+	background: #b10333;
+	color: #fff;
+
+}
+
+
+.entrevista h3 {
+	background: #de003e;
+
+}
+
+/*Formatando lista de notícias*/
+
+#lista-noticias li {
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+	height: 62px;
+}
+
+#lista-noticias li a img {
+	float: left;
+	margin: 5px;
+}
+
+#lista-noticias li a {
+	text-decoration: none;
+}
+
+
+#lista-noticias li a h3{
+	font-size: 0.8em;
+	color: #3e7ab9;
+	padding: 0;
+
+}
+
+#lista-noticias li a p {
+	font-size: 0.7em;
+	color: #000;
+
+}
+
+#lista-noticias li:hover {
+	background: #eee;
+	cursor: pointer;
+
+}
+
+
+
+
+/*Rodape*/
+
+#container-rodape {
+	background: #294c71;
+	padding: 20px;
+}
+
+#rodape {
+	width: 750px;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff; 
+}

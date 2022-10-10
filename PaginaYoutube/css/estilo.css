@@ -1,0 +1,55 @@
+
+
+body {}
+
+.cabecalho {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 30px;
+}
+
+.cabecalho figure img{
+	width: 90px;
+}
+
+
+
+.formularioPesquisa{
+	display: flex;
+	height: 40px;
+}
+
+.formularioPesquisa input{
+	width: 500px;
+	font-size: 16px;
+	border: 1px solid #cccccc;
+	border-radius: 2px 0 0 2px;
+	padding: 0 10px;
+}
+
+.formularioPesquisa button{
+	width: 60px;
+	border-radius: 0 2px 2px 0;
+	border: 1px solid #cccccc;
+	border-left: none;
+
+}
+
+.formularioPesquisa img{
+	width: 20px;
+}
+
+.cabecalho .imagemUsuario img {
+	width: 35px;
+	border-radius: 100%;
+}
+
+.destaqueCanal {
+	background-image: url(../img/destaque.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+}
+

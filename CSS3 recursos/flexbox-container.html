@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flexbox - Flexible Box Layout</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			#container {
+				background: #dcdcdc;
+				height: 600px;
+				display: flex;
+				/* 
+				row|row-reverse|column|column-reverse
+				*/
+				flex-direction: row;
+				/*
+				nowrap|wrap|wrap-reverse
+				*/
+				flex-wrap: wrap;
+				/*
+				flex-start|flex-end|center|space-between|space-around
+				*/
+				justify-content: space-between; 
+				/*
+				stretch|flex-start|flex-end|center|baseline
+				*/
+				align-items: center;
+			}
+
+
+			.caixa {
+			
+				background: white;
+				margin: 10px;
+				border: 1px solid grey;
+			}
+
+		</style>
+
+	</head>
+	<body>
+
+		<h1>Flexbox</h1>
+		<div id="container">
+			<div class="caixa" style="padding-top: 60px;">01</div>
+			<div class="caixa">02</div>
+			<div class="caixa">04</div>
+			<div class="caixa">05<br>mais items</div>
+		</div>	
+	</body>
+</html>

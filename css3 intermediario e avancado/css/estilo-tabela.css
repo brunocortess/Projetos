@@ -1,0 +1,42 @@
+/* 
+Estilizando tabelas */
+
+body {
+	font-family: "Trebuche MS", Helvetica, sans-serif;
+	
+}
+
+table {
+	width: 600px;
+	border-collapse: separate; /* collapse*/
+}
+
+th, td {
+	
+	padding: 7px;
+	
+}
+
+th {
+
+	text-transform: uppercase; /* Deixa as letras maiúsculas*/
+	border-top: 1px outset #999;
+	border-bottom: 3px double #111;
+	text-align: left; 
+	font-size: 90%; /* Letras c 90% do tam original*/
+	letter-spacing: 0.1em; /* Aumenta espaçamento entre letras*/
+}
+
+/*Classe p alternar cores da linhas da tabela*/
+tr.alternado {
+	background-color: #EFEFEF;
+}
+
+.numero {
+	`text-align: right;
+}
+
+tr:hover {
+	background-color: #c3e6e5;
+
+}

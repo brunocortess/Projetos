@@ -1,0 +1,53 @@
+/**************
+Arredondamento com imagens e fundo fixo sem degrade
+
+
+.caixa {
+	width: 400px;
+	/* Aplicando imagem de topo e cor de fundo (sem degrade) 
+	background: #dedede url("../imagens/topo.png") no-repeat left top;
+	
+}
+
+
+/* Padding no h2 pq na caixa a img fica quebrada
+.caixa h2{
+	padding: 10px 20px 0px 20px;
+}
+
+.caixa p {
+	padding: 0px 20px 20px 20px;
+	background: url("../imagens/baixo2.png") no-repeat left bottom;
+}
+
+
+
+/**************
+Arredondamento com imagens e  com degrade*/
+
+.caixa {
+	width: 400px;
+	/* Aplicando imagem de fundo  (com degrade) */
+	background: #dedede url("../imagens/fundo-arredondamento.png") repeat-y left top;  /*repetindo na vertical*/
+	
+}
+ /*Aplicando imagem de topo*/
+.caixa h2 {
+	padding: 10px 20px 0 20px;
+	background: url("../imagens/topo2.png") no-repeat left top;
+}
+
+/* Apliando espaçamento lateral na caixa*/
+.caixa p {
+	padding: 0 20px;
+/*	margin-bottom: 0;  /* Diminui espaçamento em baixo (se utilizarr div) */
+}
+
+/* Formatando classe ultimo que está dentro da classe caixa 
+/* Classe criada para formatar o último parágrafo com img de baixo*/
+.caixa .ultimo {
+	background: url("../imagens/baixo2.png") no-repeat left bottom;
+	padding-bottom: 20px; /* Espaçamento em baixo */
+/* 	width: 400px;   /* se utilizarr div */
+/*	height: 24px;   /* se utilizarr div */
+}

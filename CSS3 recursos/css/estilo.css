@@ -1,0 +1,60 @@
+/* Border radius e box sizing*/
+
+/*
+#caixa {
+	height: 300px;
+	width: 300px;
+	background: #b9c941;
+	padding: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/*-webkit-border-radius: 20px 90px;
+	-moz-border-radius: 20px 90px;
+	border-radius: 20px 90px;
+	box-sizing: 10;
+}
+
+#caixa2 {
+	height: 300px;
+	width: 300px;
+	background: #b9c941;
+	/*-webkit-border-radius: 20px 90px;
+	-moz-border-radius: 20px 90px;
+	border-radius: 20px 90px;
+	box-sizing: 10;
+}
+
+*/
+
+/*Degrades e transparencia*/
+
+/*
+#caixa {
+	width: 300px;
+	height: 300px;
+	background: url(../imagens/camera.png);
+	background: linear-gradient(to left, yellow, green,red);
+	background: radial-gradient(red,green,yellow);
+}
+
+#caixa h1 {
+	background: rgba(255,255,255,0.5);
+}
+*/
+
+/*Sombras*/
+
+#caixa {
+	height: 300px;
+	width: 300px;
+	padding: 8px;
+	margin: 20px;
+	background: #009670;
+	box-shadow: 60px 60px 10px rgba(0, 0, 0, 0.9);
+}
+
+#caixa h1 {
+	color: white;
+	text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.7);
+}
