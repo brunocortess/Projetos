@@ -247,12 +247,11 @@ body {
 }
 
 #container {
-	width: 960px; /*720px*/
+	width: 85%; /*720px*/
 	margin: 0 auto;
 	background: #FFF url("../imagens/coluna.png") repeat-y;
 	min-width: 720px;
-	max-width: 1280px;
-   
+	max-width: 960px
 }
 
 
@@ -280,8 +279,8 @@ body {
 #navegacao {
 	width: 23%;/*180px -> 25*/
 	float: left; 
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	/*background: #d1d1d1;*/
 	
 }

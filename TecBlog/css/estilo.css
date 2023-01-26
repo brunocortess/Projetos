@@ -30,7 +30,6 @@ body {
 	
 }
 
-
 #area-postagens {
 	width: 660px;
 	float: left;
@@ -99,10 +98,10 @@ a:hover {
 
 h1{
 	color: #58554D;
+	font-size: 2.5em;
 }
 
 h2 {
-	
 	color: #f7b600;
 }
 
