@@ -84,6 +84,12 @@ h1 {
     color: white;
 }
 
+/* Conteudo */
+
+#servicos {
+    background-color: white;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .btn-custom {
