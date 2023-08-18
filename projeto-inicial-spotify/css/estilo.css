@@ -115,6 +115,38 @@ nav.navbar-transparente {
     padding-left: 80px;
 }
 
+/* Rodape */
+
+footer {
+    background: #000;
+    padding: 50px 0px 20px 0px;
+    position: relative; /* Para cobrir a img do iphone */
+}
+
+footer h4 {
+    font-size: 0.8em;
+    color: #919496;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+    color: white;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+    color: #9bf0e1;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0 5px;
+}
+
 /* Tipografia */
 h1 {
     font-weight: 900;
@@ -134,6 +166,7 @@ h3 {
     font-weight: 700;
     letter-spacing: -0.04em;
 }
+
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
